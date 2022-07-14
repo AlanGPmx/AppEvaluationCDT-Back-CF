@@ -1,0 +1,1 @@
+{"openapi":"3.0.0","paths":{},"info":{"title":"CDT - App Evaluation","description":"Servicios para la evaluacion de CDT","version":"1.0","contact":{}},"tags":[],"servers":[{"url":"api/v1"}],"components":{"schemas":{}}}
