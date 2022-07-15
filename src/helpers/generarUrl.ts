@@ -10,7 +10,7 @@ import {
 
 export const generarUrl = (codigo: number, esInfo: boolean): string => {
   let condigoInterno: string;
-  const nombreMso = process.env['NOMBRE_MSO'];
+  const nombreMso = 'APPEvaluationCDT';
 
   switch (codigo) {
     case CODIGO_400:
