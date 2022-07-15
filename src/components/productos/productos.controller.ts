@@ -16,7 +16,7 @@ import {
   API_RESPUESTA_INCORRECTA,
   API_RESPUESTA_NO_ENCONTRADO,
 } from '../../config/api-responses/respuestaApis';
-import { RESPUESTA_PRODUCTOS } from 'src/config/api-responses/productos/respuesta';
+import { RESPUESTA_PRODUCTO, RESPUESTA_PRODUCTOS, RESPUESTA_PRODUCTOS_MAS_VENDIDOS } from 'src/config/api-responses/productos/respuesta';
 import { validarRespuesta } from 'src/helpers/validarRespuesta';
 import { Respuesta } from './interfaces/respuesta.interface';
 import { Response } from 'express';
@@ -56,7 +56,7 @@ export class ProductosController {
     example: '3',
   })
   @ApiInternalServerErrorResponse(API_RESPUESTA_ERROR_INTERNO_SERVIDOR)
-  @ApiResponse(RESPUESTA_PRODUCTOS)
+  @ApiResponse(RESPUESTA_PRODUCTO)
   @ApiBadRequestResponse(API_RESPUESTA_INCORRECTA)
   @ApiNotFoundResponse(API_RESPUESTA_NO_ENCONTRADO)
   @ApiOperation({ summary: 'Obtiene un producto por su ID' })
@@ -74,7 +74,7 @@ export class ProductosController {
   @UseFilters(new FiltroDeExcepcionHTTP())
   @Header(CABECERA, VALOR_CABECERA)
   @ApiInternalServerErrorResponse(API_RESPUESTA_ERROR_INTERNO_SERVIDOR)
-  @ApiResponse(RESPUESTA_PRODUCTOS)
+  @ApiResponse(RESPUESTA_PRODUCTOS_MAS_VENDIDOS)
   @ApiBadRequestResponse(API_RESPUESTA_INCORRECTA)
   @ApiNotFoundResponse(API_RESPUESTA_NO_ENCONTRADO)
   @ApiOperation({ summary: 'Obtiene todos los productos que más se venden' })
