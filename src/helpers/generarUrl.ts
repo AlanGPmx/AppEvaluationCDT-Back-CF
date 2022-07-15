@@ -2,7 +2,7 @@ import { AREA, CODIGO_400, CODIGO_401, CODIGO_404, CODIGO_409, CODIGO_500, ENLAC
 
 export const generarUrl = (codigo: number, esInfo: boolean): string => {
     let condigoInterno: string;
-    const nombreMso = 'Transacciones';
+    const nombreMso = 'APPEvaluationCDT';
     
     switch (codigo){
         case CODIGO_400: condigoInterno = '4000';
