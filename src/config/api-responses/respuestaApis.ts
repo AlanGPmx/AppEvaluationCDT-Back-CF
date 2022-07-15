@@ -7,7 +7,7 @@ export const API_RESPUESTA_NO_AUTORIZADO = generaEstructuraExcepcion(CODIGO_401,
 export const API_RESPUESTA_NO_ENCONTRADO = generaEstructuraExcepcion(CODIGO_404, RECURSO_NO_ENCONTRADO, MENSAJE_NO_ENCONTRADO);
 export const API_RESPUESTA_ERROR_INTERNO_SERVIDOR = generaEstructuraExcepcion(CODIGO_500, ERROR_INTERNO_SERVIDOR, ERROR_INESPERADO);
 
-export const API_RESPUESTA_CREADO = { 
+export const API_RESPUESTA_CREADO = {
     status: CODIGO_201,
     schema: {
         properties: {
